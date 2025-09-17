@@ -1,12 +1,25 @@
-1. git init                     # Start a new Git repository in the current folder.
-2. dir / ls                     # Show files and folders in the current directory (dir for Windows, ls for Linux/Mac).
-3. git status                   # Show the current status of files (tracked, untracked, changes, etc.).
-4. git add testing.py           # Add 'testing.py' to the staging area (prepare it for commit).
-5. git add .                    # Add all files in the current directory to the staging area.
-6. git commit -m "added testing file" # Save the staged changes with a message.
-7. git rm --cached testing.py   # Remove 'testing.py' from the staging area.
-8. git restore testing.py       # Restore 'testing.py' from the last commit.
-9. git remote add origin <repository-url>    # Add a remote repository named 'origin'.
-10. git remote -v                            # Show the URLs of the remote repositories.
-11. git remote set-url origin <new-url>      # Change the URL of the 'origin' remote.
-12. git push origin master                   # Push commits to the 'master' branch on 'origin'.
+1. Initialize a Git repository:
+    git init                     # Start a new Git repository in the current folder.
+
+2. Check files and status:
+    dir / ls                     # Show files and folders in the current directory (dir for Windows, ls for Linux/Mac).
+    git status                   # Show the current status of files (tracked, untracked, changes, etc.).
+
+3. Add files to staging:
+    git add testing.py           # Add 'testing.py' to the staging area (prepare it for commit).
+    git add .                    # Add all files in the current directory to the staging area.
+
+4. Commit changes:
+    git commit -m "added testing file" # Save the staged changes with a message.
+
+5. Remove or restore files:
+    git rm --cached testing.py   # Remove 'testing.py' from the staging area.
+    git restore testing.py       # Restore 'testing.py' from the last commit.
+
+6. Work with remote repositories:
+    git remote add origin <repository-url>    # Add a remote repository named 'origin'.
+    git remote -v                            # Show the URLs of the remote repositories.
+    git remote set-url origin <new-url>      # Change the URL of the 'origin' remote.
+
+7. Push changes to remote:
+    git push origin master                   # Push commits to the 'master' branch on 'origin'.
