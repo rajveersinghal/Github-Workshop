@@ -1,29 +1,57 @@
 1. Initialize a Git repository:
-    git init                     # Start a new Git repository in the current folder.
+    git init
+        # Start a new Git repository in the current folder.
 
 2. Check files and status:
-    dir / ls                     # Show files and folders in the current directory (dir for Windows, ls for Linux/Mac).
-    git status                   # Show the current status of files (tracked, untracked, changes, etc.).
+    dir / ls
+        # Show files and folders in the current directory (dir for Windows, ls for Linux/Mac).
+    git status
+        # Show the current status of files (tracked, untracked, changes, etc.).
 
 3. Add files to staging:
-    git add testing.py           # Add 'testing.py' to the staging area (prepare it for commit).
-    git add .                    # Add all files in the current directory to the staging area.
+    git add testing.py
+        # Add 'testing.py' to the staging area (prepare it for commit).
+    git add .
+        # Add all files in the current directory to the staging area.
 
 4. Commit changes:
-    git commit -m "added testing file" # Save the staged changes with a message.
+    git commit -m "added testing file"
+        # Save the staged changes with a message.
 
 5. Remove or restore files:
-    git rm --cached testing.py   # Remove 'testing.py' from the staging area.
-    git restore testing.py       # Restore 'testing.py' from the last commit.
+    git rm --cached testing.py
+        # Remove 'testing.py' from the staging area (but keep the file locally).
+    git restore testing.py
+        # Restore 'testing.py' from the last commit (undo changes in the working directory).
 
-6. Work with remote repositories:
-    git remote add origin <repository-url>    # Add a remote repository named 'origin'.
+6. Work with branches:
+    git branch
+        # List all local branches.
+    git branch data
+        # Create a new branch named 'data'.
+    git checkout -B data
+        # Create and switch to a new branch 'data' (or reset it if it exists).
+    git switch data
+        # Switch to the 'data' branch.
+    git branch -D data
+        # Delete the 'data' branch forcefully.
 
-This is new changes.........
-    git remote -v                            # Show the URLs of the remote repositories.
-    git remote set-url origin <new-url>      # Change the URL of the 'origin' remote.
+7. View commit history:
+    git log
+        # Show the commit history.
+    git log --oneline
+        # Show a compact, one-line-per-commit history.
 
-7. Push changes to remote:
-    git push origin master                   # Push commits to the 'master' branch on 'origin'.
+8. Work with remote repositories:
+    git remote add origin <repository-url>
+        # Add a remote repository named 'origin'.
+    git remote -v
+        # Show the URLs of the remote repositories.
+    git remote set-url origin <new-url>
+        # Change the URL of the 'origin' remote.
 
-@Rajveer 
+9. Push and pull changes:
+    git push origin master
+        # Push commits to the 'master' branch on 'origin'.
+    git pull origin master
+        # Fetch and merge changes from the 'master' branch on 'origin'.
