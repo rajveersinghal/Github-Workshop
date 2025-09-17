@@ -18,6 +18,8 @@
 
 6. Work with remote repositories:
     git remote add origin <repository-url>    # Add a remote repository named 'origin'.
+
+This is new changes.........
     git remote -v                            # Show the URLs of the remote repositories.
     git remote set-url origin <new-url>      # Change the URL of the 'origin' remote.
 
